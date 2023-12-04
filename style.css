@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* The main container containing all the elements */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Styling the navbar */
+nav{
+    /* border: 1px solid #fff; */
+    width: 69vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Styling the logo in the navbar */
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+/* Styling the links in the navbar */
+.links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 9px;
+}
+
+.linktext{
+    padding: 8px 8px;
+    border-bottom: 4px solid royalblue;
+}
+
+.linktext:hover{
+    background-color: royalblue;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+/* the first link text named Reactions */
+.text1{
+    border-bottom: 4px solid #00ccff;
+}
+
+.text1:hover{
+    background-color: #00ccff;
+}
+
+
+/* the second link text named Entertainment */
+.text2{
+    border-bottom: 4px solid #663dff;
+}
+
+.text2:hover{
+    background-image : linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+}
+
+/* the third link text named Sports */
+.text3{
+    border-bottom: 4px solid #663dff;
+}
+
+.text3:hover{
+    background-image : linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+}
+
+/* the fourth link text named Stickers */
+.text4{
+    border-bottom: 4px solid #663dff;
+}
+
+.text4:hover{
+    background-image : linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+    transition: all ease 0.5s;
+}
+
+/* the fifth link text named Artists */
+.text5{
+    border-bottom: 4px solid #663dff;
+}
+
+.text5:hover{
+    background-color: #6617cb;
+    background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+    transition: all ease 0.5s;
+}
+
+/* the sixth link are the three dots     */
+.text6{
+    border-bottom: 4px solid #663dff;
+}
+
+.text6:hover{
+    background-color: #6617cb;
+    background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+}
+
+/* Button group containing upload and create buttons */
+.buttongrp{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* The upload button on the navbar */
+.uploadBtn{
+    border: none;
+    background-color: #6157ff;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* The create button on the navbar */
+.createBtn{
+    border: none;
+    background-color: #9933ff;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;    
+}
+
+/* Login button with profile svg */
+.loginbtn{
+    display: flex;
+    align-items: center;
+}
+
+.profilesvg{
+    /* border: 1px solid #fff; */
+    background-color: #5c5c5c;
+    border-radius: 3px 0px 0px 3px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Only the login button without the svg */
+.loginbutton{
+    border: none;
+    background-color: #3e3e3e;
+    padding: 10px 40px;
+    border-radius: 0px 3px 3px 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* The div for searchbar containing input type text and a svg of the search icon */
+.searchbar{
+    width: 69vw;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* The input text field */
+#searchgif{
+    outline: none;
+    background-color: #fff;
+    width: 66vw;
+    height: 10vh;
+    border-radius: 5px 0 0 5px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #000;
+}
+
+/* The gif (All the GIFS) */
+.navgif{
+    width: 69vw;
+    height: 12vh;
+    background: URL(./Images/navgif.gif) center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* svg of the search icon */
+.searchbar svg{
+    background: radial-gradient(934px at 6% 39.5%, rgb(255, 35, 90) 0.2%, rgb(255, 35, 144) 54.8%, rgb(250, 99, 160) 93.4%);
+    width: 5vw;
+    height: 10vh;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    padding: 20px 20px;
+}
+
+.nav2{
+    /* border: 1px solid #fff; */
+    width: 69vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.trending{
+    display: flex;
+    font-size: 10px;
+    gap: 5px;
+}
+
+.btngrp{
+    display: flex;
+    font-size: 10px;
+    background-color: #3e3e3e;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btngrp h1{
+    background-color: #3e3e3e;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.btngrp h1:hover{
+    background-color: crimson;
+}
+
+.data{
+    width: 69vw;
+    height: 2000px;
+    /* border: 1px solid #fff; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 570px) and (max-width: 768px){
+    html,body{
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    nav{
+        width: 69vw;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 10px;
+        margin-left: 50px;
+    }
+
+    .linktext{
+        display: none;
+    }
+
+    .buttongrp{
+        display: none;
+    }
+
+    .loginbtn{
+        display: none;
+    }
+
+    .searchbar{
+        width: 100vw;
+    } 
+
+    .searchbar svg{
+        background: radial-gradient(934px at 6% 39.5%, rgb(255, 35, 90) 0.2%, rgb(255, 35, 144) 54.8%, rgb(250, 99, 160) 93.4%);
+        width: 5vw;
+        height: 10vh;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .trending{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 268px) and (max-width: 570px){
+    html,body{
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    nav{
+        width: 69vw;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 10px;
+        margin-left: 50px;
+    }
+
+    .linktext{
+        display: none;
+    }
+
+    .buttongrp{
+        display: none;
+    }
+
+    .loginbtn{
+        display: none;
+    }
+
+    .searchbar{
+        width: 100vw;
+    }  
+
+    .searchbar svg{
+        background: radial-gradient(934px at 6% 39.5%, rgb(255, 35, 90) 0.2%, rgb(255, 35, 144) 54.8%, rgb(250, 99, 160) 93.4%);
+        width: 10vw;
+        height: 10vh;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .trending{
+        display: none;
+    }
+
+    .btngrp{
+        display: flex;
+        justify-content: center;
+        width: 70vw;
+    }
+
+    .btngrp h1{
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        background-color: #3e3e3e;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .navgif{
+        width: 75vw;
+        height: 12vh;
+        background: URL(./Images/navgif.gif) center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
